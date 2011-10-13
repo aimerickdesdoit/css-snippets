@@ -1,0 +1,101 @@
+div {
+	position: relative;
+	border: 1px solid black;
+	width: 300px;
+	height: 109px;
+	margin: 50px auto 0px auto;
+	overflow: hidden;
+}
+
+img {
+	position: absolute;
+	left: -300px;
+	top: 0px;
+}
+
+.img1 {
+  -webkit-animation: slideshow1 6s infinite linear;
+  -moz-animation:    slideshow1 6s infinite linear;
+  -ms-animation:     slideshow1 6s infinite linear;
+}
+
+.img2 {
+  -webkit-animation: slideshow2 6s infinite linear;
+  -moz-animation:    slideshow2 6s infinite linear;
+  -ms-animation:     slideshow2 6s infinite linear;
+}
+
+.img3 {
+  -webkit-animation: slideshow3 6s infinite linear;
+  -moz-animation:    slideshow3 6s infinite linear;
+  -ms-animation:     slideshow3 6s infinite linear;
+}
+
+/*** MOZ ***/
+
+@-moz-keyframes slideshow1 {
+  0% { left: 0px; }
+  33% { opacity: 1; left: 300px; top: 0px; }
+  44% { opacity: 0; left: 300px; }
+  55% { opacity: 0; left: -300px; }
+  66% { opacity: 1; left: -300px; }
+  100% { left: 0px }
+}
+
+@-moz-keyframes slideshow2 {
+  0%   { left: -300px; }
+  33% { left: 0px; }
+  66%, 100% { left: 300px; }
+}
+
+@-moz-keyframes slideshow3 {
+  0%, 33%   { left: -300px; }
+  66% { left: 0px; }
+  100% { left: 300px; }
+}
+
+/*** WEBKIT ***/
+
+@-webkit-keyframes slideshow1 {
+  0% { left: 0px; }
+  33% { opacity: 1; left: 300px; top: 0px; }
+  44% { opacity: 0; left: 300px; }
+  55% { opacity: 0; left: -300px; }
+  66% { opacity: 1; left: -300px; }
+  100% { left: 0px }
+}
+
+@-webkit-keyframes slideshow2 {
+  0%   { left: -300px; }
+  33% { left: 0px; }
+  66%, 100% { left: 300px; }
+}
+
+@-webkit-keyframes slideshow3 {
+  0%, 33%   { left: -300px; }
+  66% { left: 0px; }
+  100% { left: 300px; }
+}
+
+/*** MS ***/
+
+@-ms-keyframes slideshow1 {
+  0% { left: 0px; }
+  33% { opacity: 1; left: 300px; top: 0px; }
+  44% { opacity: 0; left: 300px; }
+  55% { opacity: 0; left: -300px; }
+  66% { opacity: 1; left: -300px; }
+  100% { left: 0px }
+}
+
+@-ms-keyframes slideshow2 {
+  0%   { left: -300px; }
+  33% { left: 0px; }
+  66%, 100% { left: 300px; }
+}
+
+@-ms-keyframes slideshow3 {
+  0%, 33%   { left: -300px; }
+  66% { left: 0px; }
+  100% { left: 300px; }
+}
